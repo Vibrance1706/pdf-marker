@@ -1,0 +1,25 @@
+.pdf-container {
+  position: relative;
+  width: 50%; 
+  height: 100vh; /* Full viewport height */
+  border: 1px solid black;
+  overflow: auto; /* Enables scrolling within the container */
+
+}
+
+canvas {
+  display: block;
+  margin-bottom: 10px; /* Space between PDF pages */
+  width : 50%;
+}
+
+.marker {
+  position: absolute;
+  background: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none; /* Marker should not interfere with user interactions */
+  top: 100px; /* Starting position */
+  left: 50px; /* Horizontal position of marker */
+}
